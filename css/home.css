@@ -1,0 +1,522 @@
+.hero {
+  padding-bottom: 100px !important;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-info {
+  width: 530px;
+  padding-top: 70px;
+}
+
+.hero-info h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #E87D0E;
+}
+
+.hero-info h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.hero-info p {
+  font-weight: 500;
+  line-height: 170%;
+  margin: 30px 0;
+}
+
+.hero-info .btn,
+.hero-about .info .btn {
+  background: #FA8305;
+  color: #fff;
+  border-radius: 50px;
+  padding: 15px 30px;
+  border: 0;
+  transition: all 500ms ease;
+  font-size: 17px;
+}
+
+.hero-info .btn:hover,
+.hero-about .info .btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.hero img {
+  position: absolute;
+  top: -150px;
+  right: 0;
+}
+
+@media (max-width: 1180px) {
+  .hero {
+    padding-bottom: 50px;
+  }
+
+  .hero-info {
+    width: 100%;
+    padding: 50px 20px;
+  }
+
+  .hero-info h2 {
+    font-size: 18px;
+  }
+
+  .hero-info h1 {
+    font-size: 36px;
+  }
+
+  .hero-info p {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+
+  .hero-info .btn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .hero img {
+    position: relative;
+    top: -100px;
+    left: 60%;
+    transform: translateX(-50%);
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero img {
+    top: -30px;
+  }
+}
+
+/* ..... trending ..... */
+
+.trending {
+  padding-top: 50px;
+}
+
+.trending h3 {
+  font-weight: 600;
+  font-size: 31px;
+}
+
+.trending .see-all, 
+.projects .see-all {
+  color:#fff;
+  background: #25211D;
+  border-radius: 5px;
+  padding: 12px 23px;
+  float: right;
+  display: block;
+  transition: all 500ms ease;
+}
+
+.trending .see-all:hover, 
+.projects .see-all:hover {
+  transform: scale(1.1);
+}
+
+.trending .games {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 50px 0;  
+}
+
+.trending .games .block {
+  margin: 0 10px; 
+}
+
+.trending .games-trending {
+  flex-wrap: wrap ;
+  gap: 20px;
+  justify-content: inherit ; 
+}
+
+.trending .games span {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.trending .games span img {
+  position: relative;
+  top: 5px;
+  margin-right: 7px;
+}
+
+@media (max-width: 1024px) {
+  .trending h3 {
+    font-size: 26px;
+  }
+
+  .trending .games {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 0;
+  }
+
+  .trending .games .block {
+    width: 45%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .trending .see-all {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trending h3 {
+    font-size: 22px;
+  }
+
+  .trending .games {
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trending .games .block {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .trending .see-all {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .trending .games span {
+    margin-top: 10px;
+  }
+
+  .trending .games span img {
+    margin-right: 5px;
+  }
+}
+
+/* ..... big-text ..... */
+
+.big-text {
+  padding: 50px 0 !important;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  width: 800px;
+}
+
+@media (max-width: 1024px) {
+  .big-text {
+    width: 90%;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .big-text {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+
+/* ..... banner ..... */
+
+.banner {
+  padding: 80px 0;
+}
+
+.banner h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.banner p {
+  line-height: 170%;
+  margin-bottom: 30px;
+  width: 550px;
+}
+
+.banner img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .banner h3 {
+    font-size: 26px;
+  }
+
+  .banner p {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .banner img {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .banner p {
+    font-size: 14px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .banner img {
+    width: 100%;
+    margin: 15px auto;
+  }
+}
+
+/* ..... features ..... */
+
+.features {
+  background: url("../img/BG.png") no-repeat center center fixed;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.features h3, .features p {
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features h3 {
+  font-size: 30px;
+}
+
+.features .info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.features .info .block {
+  text-align: center;
+  width: 20%;
+  margin: 30px 2%;
+}
+
+.features .info .block img {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  .features .info .block {
+    width: 45%;
+    margin: 20px 2.5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .features .info .block {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .features h3 {
+    font-size: 24px;
+  }
+
+  .features p {
+    font-size: 14px;
+  }
+
+  .features .info .block img {
+    max-width: 80%;
+  }
+}
+
+/* ..... projects ..... */
+
+.projects {
+  padding: 100px 0;
+}
+
+.projects h3 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.projects p {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.projects .images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projects .images > img {
+  margin: 10px;
+}
+
+.projects .see-all {
+  float: none;
+  width: 101px;
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .projects .images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects .images img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .projects .see-all {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects .images img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .projects .see-all {
+    font-size: 14px;
+  }
+}
+
+/* ..... email ..... */
+
+.email {
+  padding-bottom: 120px;
+}
+
+.email h3 {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.email .block {
+  background: #1C140F;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 40px 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email .block h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.email .block p {
+  width: 400px;
+}
+
+.email .block input {
+  background: white;
+  outline: none;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 20px 30px;
+  padding-right: 120px;
+}
+
+.email .block input::placeholder {
+  color: #898989;
+}
+
+.email .block button {
+  cursor: pointer;
+  border: 0;
+  padding: 13px 17px;
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  z-index: 2;
+  color: white;
+  background: #FA8305;
+  border-radius: 5px;
+}
+
+.email .block .block-send {
+  position: relative;
+  width: 380px;
+}
+
+@media (max-width: 1024px) {
+  .email .block {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+  }
+
+  .email .block h4 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .email .block p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .email {
+    text-align: center;
+  }
+
+  .email .block .block-send {
+    position: relative;
+    width: 280px;
+  }
+
+  .email .block h4 {
+    font-size: 20px;
+  }
+
+  .email .block p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .email .block input {
+    font-size: 14px;
+    padding: 12px 120px 12px 20px;
+  }
+
+  .email .block button {
+    padding: 6px 15px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,145 @@
+header {
+  padding: 20px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+header .logo {
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+}
+
+header nav ul li.active::after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 5px;
+  background: #DC7000;
+  border-radius: 10px;
+  position: relative;
+  top: 5px;
+  right: 15px;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+  border-bottom: 5px solid #DC7000;
+}
+
+header nav ul li.btn a {
+  background: #FA9021;
+  padding: 9px 17px;
+  border-radius: 5px;
+  transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+  background: #DC7000;
+}
+
+/* Burgers menu */
+.burger {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger span {
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #fff;
+  position: relative;
+  transform: rotate(-45deg);
+}
+
+.burger span::before,
+.burger span::after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  left: 0;
+  transition: all 0.3s ease;
+  left: 7px;
+}
+
+.burger span::before {
+  top: -12px;
+}
+
+.burger span::after {
+  bottom: -12px;
+}
+
+.burger.active span {
+  background-color: transparent;
+}
+
+.burger.active span::before {
+  top: 0; 
+  width: 30px; 
+}
+
+.burger.active span::after {
+  transform: rotate(-90deg);
+  bottom: 0; 
+  width: 30px; 
+}
+
+@media (max-width: 1024px) {
+  header nav {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -500px;
+    left: 0;
+    margin-top: 100px;
+    transition: all 500ms ease;
+    opacity: 0;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  nav.active {
+    opacity: 1;
+    top: 0;
+  }
+}

@@ -1,0 +1,5 @@
+// Sql TABLE "users":
+CREATE TABLE `gportal`.`users` ( `id` INT(5) UNSIGNED NOT NULL AUTO_INCREMENT , `login` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , `username` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , `email` VARCHAR(70) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , `password` VARCHAR(130) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci;
+
+// Sql TABLE "trending":
+CREATE TABLE `gportal`.`trending` ( `id` INT(5) UNSIGNED NOT NULL AUTO_INCREMENT , `image` VARCHAR(60) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , `followers` INT(5) UNSIGNED NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_general_ci;

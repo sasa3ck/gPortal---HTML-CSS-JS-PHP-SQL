@@ -1,0 +1,141 @@
+.hero-about {
+  position: relative;
+}
+
+.hero-about .info {
+  width: 500px;
+  padding: 250px 0 !important;
+}
+
+.hero-about .info h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.hero-about .info .btn {
+  margin-top: 20px;
+}
+
+.hero-about img {
+  position: absolute;
+  right: -150px;
+  top: 0;
+}
+
+@media (max-width: 1180px) {
+  .hero-about .info {
+    width: 100%;
+    padding: 80px 20px;
+  }
+
+  .hero-about .info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .hero-about .info p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .hero-about .info .btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .hero-about img {
+    position: unset;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-about .info {
+    padding: 60px 10px;
+  }
+
+  .hero-about .info h1 {
+    font-size: 20px;
+  }
+
+  .hero-about .info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .hero-about .info .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* ..... work ..... */
+
+.work {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
+.work h2 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.work .blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work .blocks .block {
+  width: 20%;
+  border-radius: 10px;
+  padding: 50px 35px;
+  background: #1C140F;
+}
+
+.work .blocks .block h3 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.work .blocks .block .badge {
+  border-radius: 7px;
+  padding: 10px 20px;
+}
+
+.work .blocks .block .badge.purple {
+  background: #560F67;
+}
+
+.work .blocks .block .badge.brown {
+  background: #31190D;
+}
+
+.work .blocks .block .badge.green {
+  background: #192A1D;
+}
+
+@media (max-width: 1180px) {
+  .work .blocks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .work .blocks .block {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work .blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work .blocks .block {
+    width: 80%;
+    padding: 30px 20px;
+  }
+}
